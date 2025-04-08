@@ -28,6 +28,12 @@ DEBUG = True
 # Allow all hosts
 ALLOWED_HOSTS = ["*"]
 
+ALLOWED_HOSTS += [
+    'cautious-garbanzo-jjq5r7jxrr742q7x5-8000.app.github.dev',
+    'localhost',
+    '127.0.0.1'
+]
+
 
 # Application definition
 
