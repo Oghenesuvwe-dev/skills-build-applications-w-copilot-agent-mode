@@ -7,12 +7,13 @@ from .serializers import UserSerializer, TeamSerializer, ActivitySerializer, Lea
 
 @api_view(['GET'])
 def api_root(request, format=None):
+    base_url = 'https://cautious-garbanzo-jjq5r7jxrr742q7x5-8000.app.github.dev/'
     return Response({
-        'users': reverse('user-list', request=request, format=format),
-        'teams': reverse('team-list', request=request, format=format),
-        'activity': reverse('activity-list', request=request, format=format),
-        'leaderboard': reverse('leaderboard-list', request=request, format=format),
-        'workouts': reverse('workout-list', request=request, format=format),
+        'users': base_url + 'api/users/',
+        'teams': base_url + 'api/teams/',
+        'activity': base_url + 'api/activity/',
+        'leaderboard': base_url + 'api/leaderboard/',
+        'workouts': base_url + 'api/workouts/',
     })
 
 class UserViewSet(viewsets.ModelViewSet):
