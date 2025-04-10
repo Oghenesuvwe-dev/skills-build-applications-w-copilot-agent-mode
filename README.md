@@ -52,6 +52,18 @@ In this exercise, you will:
 
 > ❕ **Important:** The **Start Exercise** button will activate after copying the repository. You will probably need to refresh the page.
 
+## Testing the Application
+
+### Backend Testing
+
+1. Ensure the Django server is running successfully. You can access the backend at `http://127.0.0.1:8000/` to verify its functionality.
+2. Test API endpoints using tools like Postman or `curl` to ensure they return the expected responses.
+
+### Frontend Testing
+
+1. Ensure the React application is running on a different port (e.g., `http://localhost:<new-port>`). Open the URL in a browser to verify the frontend functionality.
+2. Interact with the application to ensure it communicates properly with the backend.
+
 ---
 
 [Review the GitHub status page](https://www.githubstatus.com/)
